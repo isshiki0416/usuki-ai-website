@@ -1,9 +1,11 @@
-女性議員ホームページ（静的HTML版）
+ホームページ（静的HTML版）
 
 ファイル構成
 - index.html: ページ本体
 - styles.css: デザイン・レスポンシブ対応
 - script.js: スマホ用ハンバーガーメニュー
+- robots.txt: 検索エンジンの巡回設定
+- SEO-GUIDE.txt: SEOの説明と独自ドメイン取得後の設定手順
 - assets/hero-portrait.jpg: メインビジュアル用の候補者写真
 - assets/candidate-portrait.jpg: Profile用の候補者写真
 - assets/news-activity.jpg: News用の活動写真
@@ -20,8 +22,8 @@ index.htmlをブラウザで開くだけで表示できます。
 
 公開前に変更する箇所
 1. 候補者名「うすき あい」の表記を確認
-2. Instagram・X・FacebookのURLを変更
-3. office@example.jp を後援会登録ページのURLへ変更
+2. Instagram・X・後援会のURLを確認
+3. 独自ドメイン取得後、「SEO-GUIDE.txt」の設定を行う
 4. og:imageを公開先ドメインから始まる絶対URLへ変更
 5. 写真を差し替える場合は、メインをhero-portrait.jpg、Profileをcandidate-portrait.jpgへ上書き
 
