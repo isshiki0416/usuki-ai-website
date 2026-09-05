@@ -128,9 +128,16 @@ img {
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
-  gap: 18px;
+  align-items: center;
+  gap: 16px;
   white-space: nowrap;
+}
+
+.brand-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 1.25;
 }
 
 .brand-name {
@@ -141,10 +148,17 @@ img {
 }
 
 .brand-role {
+  margin-top: 4px;
   color: var(--orange);
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+}
+
+.header-party-logo {
+  width: clamp(118px, 10vw, 150px);
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .desktop-nav {
@@ -1397,6 +1411,22 @@ img {
   flex-direction: column;
 }
 
+.footer-brand-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(30px, 4vw, 62px);
+}
+
+.footer-party-logo {
+  width: clamp(220px, 21vw, 280px);
+}
+
+.footer-party-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .footer-brand strong {
   font-family: var(--serif);
   font-size: 1.65rem;
@@ -1466,6 +1496,10 @@ img {
     display: none;
   }
 
+  .header-party-logo {
+    width: 110px;
+  }
+
   .desktop-nav {
     gap: 15px;
   }
@@ -1493,6 +1527,14 @@ img {
 
   .brand-name {
     font-size: 1.15rem;
+  }
+
+  .brand {
+    gap: 11px;
+  }
+
+  .header-party-logo {
+    width: clamp(94px, 27vw, 110px);
   }
 
   .desktop-nav {
@@ -1971,10 +2013,9 @@ img {
   .policy-card .policy-summary {
     font-size: 0.92rem;
     line-height: 1.9;
-    letter-spacing: 0.01em;
-    text-align: justify;
-    text-align-last: left;
-    text-justify: inter-character;
+    letter-spacing: 0.012em;
+    word-spacing: 0;
+    text-align: left;
     text-wrap: pretty;
   }
 
@@ -1985,26 +2026,26 @@ img {
 
   .policy-summary-disclosure summary {
     position: relative;
-    width: 100%;
+    width: fit-content;
     min-width: 0;
     min-height: 28px;
-    padding-right: 36px;
-    display: flex;
+    padding-right: 0;
+    display: inline-flex;
     align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
   }
 
   .policy-summary-icon {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 28px;
+    position: static;
+    width: 20px;
     text-align: center;
-    transform: translateY(-50%);
+    transform: none;
     transform-origin: center;
   }
 
   .policy-summary-disclosure[open] .policy-summary-icon {
-    transform: translateY(-50%) rotate(45deg);
+    transform: rotate(45deg);
   }
 
   .policy-summary-content {
@@ -2096,6 +2137,16 @@ img {
     align-items: flex-start;
     flex-direction: column;
     gap: 27px;
+  }
+
+  .footer-brand-group {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-party-logo {
+    width: min(240px, 78vw);
   }
 
   .footer-bottom {
