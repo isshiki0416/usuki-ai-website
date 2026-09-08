@@ -1999,8 +1999,8 @@ img {
 
   .policy-card,
   .administrative-group .policy-card {
-    padding-right: clamp(20px, 6vw, 28px);
-    padding-left: clamp(20px, 6vw, 28px);
+    padding-right: clamp(16px, 4.5vw, 20px);
+    padding-left: clamp(16px, 4.5vw, 20px);
   }
 
   .policy-card h4 {
@@ -2018,6 +2018,15 @@ img {
     word-spacing: 0;
     text-align: left;
     text-wrap: pretty;
+    line-break: strict;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .policy-phrase {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
   }
 
   .policy-summary-disclosure[open] {
