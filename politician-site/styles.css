@@ -1394,8 +1394,8 @@ img {
 
 .site-footer {
   padding: 65px 7vw 25px;
-  background: var(--navy-deep);
-  color: var(--white);
+  background: var(--paper);
+  color: var(--navy);
 }
 
 .footer-top {
@@ -1403,7 +1403,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(16, 38, 76, 0.2);
 }
 
 .footer-brand {
@@ -1434,7 +1434,7 @@ img {
 }
 
 .footer-brand span {
-  color: #abb6c7;
+  color: #536078;
   font-size: 0.62rem;
 }
 
@@ -1448,12 +1448,12 @@ img {
   height: 43px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(16, 38, 76, 0.42);
   border-radius: 50%;
   font-family: Arial, sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
-  transition: background 180ms ease, border-color 180ms ease;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
 .footer-social-icon {
@@ -1470,13 +1470,14 @@ img {
 .footer-socials a:focus-visible {
   background: var(--orange);
   border-color: var(--orange);
+  color: var(--white);
 }
 
 .footer-bottom {
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
-  color: #929db0;
+  color: #536078;
   font-size: 0.66rem;
 }
 
