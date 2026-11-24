@@ -503,10 +503,6 @@ img {
     animation: heroPortrait 1.05s cubic-bezier(0.22, 1, 0.36, 1) 320ms both;
   }
 
-  .portrait-frame img {
-    animation: heroImage 1.5s cubic-bezier(0.22, 1, 0.36, 1) 320ms both;
-  }
-
   .vertical-message {
     animation: heroFadeLeft 850ms cubic-bezier(0.22, 1, 0.36, 1) 720ms both;
   }
@@ -575,15 +571,6 @@ img {
   to {
     opacity: 1;
     transform: none;
-  }
-}
-
-@keyframes heroImage {
-  from {
-    transform: scale(1.035);
-  }
-  to {
-    transform: scale(1);
   }
 }
 
@@ -2448,6 +2435,8 @@ img {
 }
 @media (max-width: 900px) {
   .hero .portrait-frame img {
+    transform: none;
+    transition: none;
     object-position: max(100%, calc(69% - 17vw)) top;
   }
 }
