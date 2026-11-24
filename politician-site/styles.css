@@ -960,6 +960,13 @@ img {
   border-top: 1px solid var(--line);
 }
 
+.administrative-group .policy-card { min-height: auto; }
+.administrative-group .policy-cards { border-bottom: 0; }
+.reform-action { display: flex; justify-content: center; padding: 20px 16px 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--navy); background: var(--navy); }
+.policy-read-link { display: inline-flex; align-items: center; justify-content: center; gap: 1.2em; padding: 12px 28px; min-height: 48px; background: var(--navy); color: white; font-weight: 700; text-decoration: none; }
+.policy-read-link span { color: #ffae90; }
+.policy-read-link:hover { background: #213e68; }
+.policy-read-link:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 .policy-card {
   position: relative;
   min-width: 0;
@@ -2403,5 +2410,44 @@ img {
   .news .social-list > a:focus-visible {
     outline: 2px solid var(--orange);
     outline-offset: 4px;
+  }
+}
+
+/* Let the landscape portrait supply the backdrop behind the existing type. */
+.hero-photo-credit {
+  position: absolute;
+  inset: auto 14px 10px auto;
+  padding: 1px 5px;
+  border-radius: 2px;
+  background: transparent;
+  color: #39404a;
+  font: 400 .5rem/1.4 Arial, sans-serif;
+  letter-spacing: .02em;
+}
+@media (max-width: 900px) {
+  .hero-photo-credit { inset: auto auto 10px 12px; }
+}
+.hero .orange-plane { display: none; }
+.hero .portrait-frame {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  box-shadow: none;
+  animation: none;
+}
+.hero .portrait-frame img {
+  display: block;
+  object-position: center top;
+  filter: none;
+  animation: none;
+}
+@media (min-width: 901px) {
+  .hero-visual { position: static; }
+  .hero .portrait-frame { z-index: 0; }
+}
+@media (max-width: 900px) {
+  .hero .portrait-frame img {
+    object-position: max(100%, calc(69% - 17vw)) top;
   }
 }
